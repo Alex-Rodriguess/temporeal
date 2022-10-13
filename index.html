@@ -4,17 +4,19 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Projeto-4</title>
-    <link rel="stylesheet"
-    href=https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
-    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
-    crossorigin="anonymous"/>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="css/style.css" />
+    <title>Tempo e Temperatura</title>
   </head>
 
   <body>
-    <div class="container-fluid p-0 m-o d-flex-justify-content-center">
-      <div class="card text-center shadow-lg" style="width: 24rem">
+    <div class="container-fluid p-0 m-o d-flex justify-content-center">
+      <div class="card text-center shadow-lg" style="width: 26rem">
         <div class="card-header">TEMPO E TEMPERATURA</div>
 
         <div class="card-body">
@@ -23,8 +25,30 @@
           <div class="container-img"></div>
           <img src="./icons/unknown.png" />
         </div>
+        <div class="container-temp my-4 mx-3">
+          <div>22</div>
+          <span>°C</span>
+        </div>
+        <div class="weather">nublado</div>
+        <div class="low-higt">22°C / 23°C</div>
 
-        <div class="card-footer">Footer</div>
+        <div class="card-footer"></div>
+        <div class="input-group">
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Digite o nome da Cidade"
+            aria-label="Recipient's username"
+            aria-describedby="button-addon2"
+          />
+          <button
+            class="btn btn-outline-secondary"
+            type="button"
+            id="button-addon2"
+          >
+            <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
+          </button>
+        </div>
       </div>
     </div>
 
