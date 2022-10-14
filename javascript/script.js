@@ -63,3 +63,54 @@ function displayResults(weather) {
     weather.main.temp_max
   )}°c`;
 }
+
+function dateBuilder(d) {
+  let days = [
+    "Domingo",
+    "Segunda",
+    "Terça",
+    "Quarta",
+    "Quinta",
+    "Sexta",
+    "Sábado",
+  ];
+  let months = [
+    "Janeiro",
+    "Fevereiro",
+    "Março",
+    "Abril",
+    "Maio",
+    "Junho",
+    "Julio",
+    "Agosto",
+    "Setembro",
+    "Outubro",
+    "Novembro",
+    "Dezembro",
+  ];
+
+  let day = days[d.getDay()]; //getDay: 0-6
+  let date = d.getDate();
+  let month = months[d.getMonth()];
+  let year = d.getFullYear();
+
+  return `${day}, ${date} ${month} ${year}`;
+}
+
+container_temp.addEventListener("click", changeTemp);
+function changeTemp() {
+  temp_number_now = temp_number.innerHTML;
+
+  if (temp_unit.innerHTML === "°c") {
+    let f = temp_number_now * 1.8 + 32;
+    temp_unit.innerHTML = "°f";
+    temp_number.innerHTML = Math.round(f);
+  } else {
+    let c = (temp_number_now - 32) / 1.8;
+    temp_unit.innerHTML = "°c";
+    temp_number.innerHTML = Math.round(c);
+  }
+}
+function capitalizeFirstLetter(string) {
+  return string.charAt(0).toUpperCase() + string.slice(1);
+}
