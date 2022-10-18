@@ -8,11 +8,12 @@
 
 .container-temp {
   display: flex;
+  padding-bottom: 80px;
   justify-content: center;
   background-color: rgba(0, 0, 0, 0.2);
   box-shadow: 5px 6px rgba(0, 0, 0, 0.6);
   font-size: 100px;
-  font-weight: 900;
+  font-weight: 100px;
   text-shadow: 3px 6px rgba(0, 0, 0, 0.6);
   cursor: pointer;
 }
@@ -26,5 +27,9 @@
 }
 
 .container-fluid {
-  background-image: linear-gradient(45deg, black, red);
+  background-image: linear-gradient(
+    45deg,
+    rgb(255, 255, 255),
+    rgb(146, 229, 235)
+  );
 }
