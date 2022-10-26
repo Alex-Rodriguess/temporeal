@@ -29,7 +29,14 @@
 .container-fluid {
   z-index: 1;
 }
-.container {
+/*.container {
   background: url(https://spillwords.com/wp-content/uploads/2016/02/Great-Planet-Spillwords-1138x900.jpg)
     center no-repeat;
+}*/
+
+.img-fundo {
+  position: absolute;
+  width: 1500px;
+  height: 850px;
+  right: 1%;
 }
